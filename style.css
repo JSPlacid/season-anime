@@ -1,0 +1,50 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #fff;
+   /* background-color: black; */
+   background-color: rgb(9, 11, 55);
+   justify-content: center;
+   align-items: center;
+}
+.box {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+nav{
+   margin: auto;
+   background-color: thistle;
+}
+nav h4{
+   margin: 24px 23px 0;
+   align-items: center;
+}
+
+.animated {
+   height: 100px;
+   /* color: red; */
+   font-family: charm, cursive, cambria;
+   font-size: 3rem;
+   background: url(./imgs/flower-side.png) no-repeat;
+   background-position: top center;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   animation: moveBg 25s linear infinite;
+   -webkit-animation: moveBg 25s infinite;
+}
+
+/*text background animation*/
+@keyframes moveBg {
+   0% {
+       background-position: 0% 50%;
+   }
+
+   100% {
+       background-position: 100% 60%;
+   }
+}
